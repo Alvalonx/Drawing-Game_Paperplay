@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    [SerializeField]
-    private AudioSource m_AudioSource;
+    private AudioSource audioSource = GameManager.Instance.GetAudioSource();
     [SerializeField]
     private GameObject audioOn;
     [SerializeField] 
@@ -14,14 +13,14 @@ public class AudioController : MonoBehaviour
     {
         if (isPlaying)
         {
-            m_AudioSource.mute = true;
+            audioSource.mute = true;
             audioOn.SetActive(false);  
             audioOff.SetActive(true);  
             isPlaying = false;
         }
         else
         {
-            m_AudioSource.mute = false;
+            audioSource.mute = false;
             audioOn.SetActive(true);   
             audioOff.SetActive(false); 
             isPlaying = true;

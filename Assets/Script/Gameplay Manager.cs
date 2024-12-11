@@ -21,6 +21,8 @@ public class GameplayManager: MonoBehaviour {
     public Dictionary<string, Color32> colorDictionary;
     private Color32 selectedColor;
 
+    [SerializeField]
+    private Transform background;
     private RectTransform crayon;
     [SerializeField]
     private GameObject object1, object2, object3, object4, object5, object6, object7, object8, object9, object10;
@@ -77,6 +79,17 @@ public class GameplayManager: MonoBehaviour {
         };
         selectedColor = colorDictionary["Hitam"];
         SetDrawingObject();
+        StretchObject();
+    }
+    void StretchObject()
+    {
+        float screenWidth = Screen.width;
+        float screenHeight = Screen.height;
+
+        
+        float aspectRatio = screenWidth / screenHeight;
+
+        background.transform.localScale = new Vector3(aspectRatio, 1f);
     }
 
     public void SetDrawingObject()
@@ -157,7 +170,6 @@ public class GameplayManager: MonoBehaviour {
                 break;
             case "Hitam":
                 selectedColor = colorDictionary["Hitam"];
-                Debug.Log("nigga");
                 break;
             case "Putih":
                 selectedColor = colorDictionary["Putih"];
@@ -239,13 +251,13 @@ public class GameplayManager: MonoBehaviour {
 
     public void ControlLine()
     {
-        if (Input.GetMouseButtonDown(0))  // Saat mouse ditekan
+        if (Input.GetMouseButtonDown(0))  
         {
-            CreateNewLine();  // Membuat objek LineRenderer baru setiap kali mouse ditekan
+            CreateNewLine();  
             Vector3 startPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             startPosition.z = 0f;
             line.SetPosition(0, startPosition);
-            previousPosition = startPosition;  // Simpan posisi awal
+            previousPosition = startPosition;  
         }
         if (Input.GetMouseButton(0))
         {

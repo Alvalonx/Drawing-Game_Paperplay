@@ -1,0 +1,12 @@
+# ninja log v5
+105	921	7556298659080443	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	113760ed6c45d65e
+923	1567	7556298665542156	D:/Alvalon/Drawing-Game_Paperplay/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5n2s3162/obj/arm64-v8a/libswappywrapper.so	88167ca695c787bc
+38	2566	7556298677072712	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	48eecc68e1fd2c79
+28	2654	7556298677901401	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e9d6a552b53882f6
+76	2696	7556298678120440	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	e073c6011517cd57
+65	2841	7556298679921960	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	68975ba4412a59f5
+91	2860	7556298680229521	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e66fe79648bc2150
+1	3023	7556298681417287	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	694d20217859aadb
+54	3222	7556298683747863	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	ffb7b04d134581a1
+19	3399	7556298685648394	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9313fc6df01b62c9
+3399	3564	7556298687303145	D:/Alvalon/Drawing-Game_Paperplay/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5n2s3162/obj/arm64-v8a/libgame.so	27e0d17a46cc92e

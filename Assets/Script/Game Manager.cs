@@ -3,6 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
+    private AudioSource audioSource;
 
     public int draw;
 
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Setdraw(int objectDraw)
@@ -32,5 +34,9 @@ public class GameManager : MonoBehaviour
         {
             return instance;
         }
+    }
+    public AudioSource GetAudioSource()
+    {
+        return audioSource;
     }
 }
